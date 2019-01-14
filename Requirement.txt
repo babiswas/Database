@@ -5,3 +5,4 @@
 5.Foreign key in this new table is cpid.
 6.Roles flag will be there in roles table.
 4.Enrollment.csv is created using prime API.
+5.user userid enrollment csv
