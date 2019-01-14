@@ -3,3 +3,4 @@
 3.The csv is loaded to mysql database.
 4.user role table is created.
 5.Foreign key in this new table is cpid.
+6.Roles flag will be there in roles table.
