@@ -1,0 +1,45 @@
+1.mysql -u root -p ;
+To start the mysql from cmd.
+To see all the databases use: show databases;
+
+To create database:
+show create database test1;
+
+use test1;
+create table user(name varchar(100),adress varchar(200),id integer(10));
+This creates the table.
+describe user;
+
+drop table user if exists user1;
+
+
+Insert query in mysql.
+insert into user(name,adress,city,id) values('Bapan','Bangalore-10','Bangalore',65);
+
+To read all the columns:
+select * from user order by id desc;
+
+select * from user;
+
+insert into user(name,adress,city,id) values('Bapan','Bangalore-10','Bangalore','25');
+select  * fdrom user where city='Bangalore';
+explain select * from user where city='Bangalore';
+
+create index index2 on user(city);
+indexing reduces the search time.
+
+select table_id from information_schema.innodb_sys_tables where name='publisher/tables';
+desc information_schema.innodb_sys_indexes;
+
+show indexes from user;
+
+create table user2(name varchar(12),city varchar(15),state varchar(10),index(city));
+
+
+
+
+
+
+
+
+

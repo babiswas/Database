@@ -1,0 +1,52 @@
+mysql -u root -p
+pass:
+
+Show databases;
+create database test;
+use test;
+
+
+create table user(name varchar(20),id integer(10),adress varchar(20),city varchar(20));
+describe user;
+insert into user(name,id,adress,city) values("Bapan",1,"Guwahati","Assam");
+select * from user;
+select * from user where city="Guwahati";
+Alter table user add salary integer(20) not null;
+
+
+Alter table:
+------------
+1.Add Column
+2.Drop Column
+3.Change datatype of the column
+4.Add primary key 
+5.Rename table
+
+alter table newemployee add column test integer(11);
+alter table newemployee drop column test;
+alter table rename to newemployee;
+alter table newemployee change point point int(10) auto_increment primary key;
+
+create table user(id integer(10),name varchar(20),adress varchar(20),email varchar(30),primary key(id));
+create table porder(order_id integer(10),order_num integer(10),uid integer(10),primary key (order_id),foreign key (uid) references user(id));
+describe user;
+describe porder;
+
+select user.id,user.email from user inner join porder on user.id=porder.id;
+create table user(name varchar(20),id integer(10),index(name));
+
+
+inner join displays rows for matching records in both tables.
+
+
+
+
+
+
+
+
+
+
+
+
+
