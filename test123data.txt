@@ -1,0 +1,34 @@
+NOT NULL 
+-------------------------------------------------------------------------------------------------------------------------
+create table T(name varchar(22),id integer(10),adress varchar(100),primary key(id));
+create table X(name varchar(30) not null,id int(12) not null auto_increment,adress varchar(100) not null,primary key(id));
+insert into x(name,id,adress) values('Bapan',1234,"Hello");
+select * from task where enddate=NULL;
+update task set column=value where key=value1;
+update task set column=value1 where key=value2;
+select * from task;
+
+* means selecting all the columns.
+
+select * from task;
+update table set column1=value1,column2=value2 where key=key1;
+alter table user change column1 column2 varchar(23) not null;
+
+describe table;
+
+create table mend(name varchar(22) not null,id int(12) not null auto_increment,sid int(10) not null,subject varchar(22) not null,foreign key(sid) references stud(id),primary key(id));
+1.on delete set null
+2.on delete cascade
+
+Mysql Foreign Key:
+-------------------
+create table mend(name varchar(30),id int(11),sid int(11),constraint x foreign key(sid) references stud(id) on delete cascade on update cascade);
+alter table mend drop foreign key x
+alter table m
+
+
+
+
+
+
+
